@@ -1,0 +1,91 @@
+/*Principal*/
+
+body {
+    background-color: black;
+    color: white;
+    padding-bottom: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    align-items: justify;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 13px;
+    z-index: 999;
+    width: 100%;
+    background-color: black;
+}
+
+.links{
+    text-align: right;
+}
+
+b{
+    color: rgb(180, 0, 0);
+}
+
+/*Index*/
+
+.img-index{
+    height: auto;
+    max-width: 38%; 
+}
+
+mark{
+    background-color: rgb(177, 1, 1);
+    color: rgb(0, 0, 0);
+}
+
+/*Development*/
+
+.img-development{
+    height: auto;
+    max-width: 38%; 
+}
+
+/* arthurmorgancharacter */
+
+.img-principal{
+    height: auto;
+    max-width: 38%;
+}
+
+.tabela-character, .td-character, .th-character {
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    padding: 7px;
+    border-collapse: collapse;
+}
+
+.img-character{
+    height: auto;
+    max-width: 35%;
+}
+
+/*Artes*/
+
+/*Contatos*/
+.contacts{
+    text-align: center;
+}
