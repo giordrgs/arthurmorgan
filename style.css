@@ -1,39 +1,61 @@
-/*Principal*/
+/*///////////////////////////////////////////Principal/////////////////////////////////////////*/
 
 body {
-    background-color: black;
+    background: linear-gradient(to right, #300404fb, #000000);
     color: white;
     padding-bottom: 70px;
 }
 
-a {
-    text-decoration: none;
-    color: red;
+.div-body {
+    margin-left: 15%;
+    margin-right: 15%;
+
 }
+
 
 h1 {
     text-align: center;
+    font-size: 40px;
 }
 
 h2 {
     text-align: center;
+    font-size: 35px;
 }
 
 h3 {
     align-items: justify;
+    font-size: 29px;
+    text-align: center;
 }
 
 p {
     text-align: justify;
+    font-size: 20px;
 }
+
+/*/////////////////////////////////////////////Footer//////////////////////////////////////////*/
 
 footer {
     position: fixed;
     bottom: 0;
-    padding: 13px;
+    margin-left: 13px;
     z-index: 999;
     width: 100%;
-    background-color: black;
+    background: linear-gradient(to right, #300404fb, #000000);
+}
+
+/*/////////////////////////////////////////////LINKS///////////////////////////////////////////*/
+
+a {
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+
 }
 
 .links{
@@ -44,11 +66,12 @@ b{
     color: rgb(180, 0, 0);
 }
 
-/*Index*/
+/*//////////////////////////////////////////////Index//////////////////////////////////////////*/
 
 .img-index{
     height: auto;
-    max-width: 38%; 
+    max-width: 55%;
+    border-radius: 10px; 
 }
 
 mark{
@@ -56,36 +79,124 @@ mark{
     color: rgb(0, 0, 0);
 }
 
-/*Development*/
+/*/////////////////////////////////////////////Development/////////////////////////////////////*/
 
-.img-development{
+.img-development-main{
     height: auto;
-    max-width: 38%; 
+    max-width: 55%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #8d43127e; 
 }
 
-/* arthurmorgancharacter */
-
-.img-principal{
+.img-development-end {
     height: auto;
-    max-width: 38%;
+    max-width: 55%;
+    border-radius: 10px; 
+
 }
 
-.tabela-character, .td-character, .th-character {
+/*/////////////////////////////////////////////Character///////////////////////////////////////*/
+
+.img-development-principal{
+    height: auto;
+    max-width: 55%;
+    border-radius: 10px;
+}
+
+.tabela-character, .td-character {
     border-width: 1px;
     border-color: white;
     border-style: solid;
     padding: 7px;
     border-collapse: collapse;
+    font-size: 20px;
+    font-family: serif;
 }
+
+ .th-character {
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    padding: 7px;
+    border-collapse: collapse;
+    font-size: 25px;
+    font-family: sans-serif;
+
+ }
+
+ .th-character-sections {
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    padding: 7px;
+    border-collapse: collapse;
+    font-size: 21px;
+    font-family: serif;
+
+ } 
 
 .img-character{
     height: auto;
-    max-width: 35%;
+    max-width: 55%;
+    border-radius: 10px;
 }
 
-/*Artes*/
+/*//////////////////////////////////////////////Artes//////////////////////////////////////////*/
 
-/*Contatos*/
+.img-art {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+
+}
+
+/*/////////////////////////////////////////////Contatos////////////////////////////////////////*/
+
 .contacts{
     text-align: center;
+    background: linear-gradient(to right, #4209098f, #000000);
+}
+
+#contact-message {
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+}
+
+span {
+    color: rgb(207, 22, 22);
+}
+
+.input{
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #812626;
+    color: white;
+    border: 0;
+    box-shadow: 2px 2px 10px rgb(110, 2, 2);
+    padding: 7px;
+}
+
+.bigbox{
+    height: 150px;
+}
+
+.age {
+    width: 85px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #812626;
+    color: white;
+    border: 0;
+    box-shadow: 2px 2px 10px rgb(110, 2, 2);
+    padding: 7px;
+    text-align: center;
+}
+
+.age::-webkit-outer-spin-button, .age::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
 }
