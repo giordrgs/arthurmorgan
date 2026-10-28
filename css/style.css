@@ -133,6 +133,18 @@ mark{
     color: rgb(0, 0, 0);
 }
 
+.aura-glow {
+    animation: aura 2s infinite ease-in-out;
+}
+
+@keyframes aura {
+    0% { text-shadow: 0 0 20px rgba(255, 0, 0, 0.4), 0 0 20px rgba(255, 0, 0, 0.4);}
+
+    50% { text-shadow: 0 0 90px rgb(255, 0, 0), 0 0 90px rgb(255, 0, 0);}
+
+    100% { text-shadow: 0 0 20px rgba(255, 0, 0, 0.4), 0 0 20px rgba(255, 0, 0, 0.4);}
+}
+
 /* Character */
 
 .img-development-principal{
@@ -202,8 +214,132 @@ mark{
     margin-bottom: 20px;
 }
 
-.lista{
-    list-style: '🔺';
+/*Lists*/
+
+.list-title {
+    margin-bottom: 40px;
+}
+
+.div-list {
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-item-face {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    
+}
+
+.list-item-face::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    top: 13%;
+    transform: translateY(-13%);
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    background-image: url('../src/Img/cowboy-face.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.list-item-face:hover {
+    animation: grow 0ms linear forwards;
+}
+
+.list-item-body {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    
+}
+
+.list-item-body::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    top: 13%;
+    transform: translateY(-13%);
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    background-image: url('../src/Img/cowboy-build.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.list-item-body:hover {
+    animation: grow 0ms linear forwards;
+}
+
+.list-item-eyes {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    
+}
+
+.list-item-eyes::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    top: 13%;
+    transform: translateY(-13%);
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    background-image: url('../src/Img/cowboy-eyes.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.list-item-eyes:hover {
+    animation: grow 0ms linear forwards;
+}
+
+.list-item-voice {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    
+}
+
+.list-item-voice::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    top: 13%;
+    transform: translateY(-13%);
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    background-image: url('../src/Img/cowboy-voice.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.list-item-voice:hover {
+    animation: grow 0ms linear forwards;
+}
+
+@keyframes grow {
+    0% { transform: scale(1);}
+    100% { transform: scale(1.45);}
 }
 
 /* Pictures */
@@ -261,23 +397,33 @@ label {
     -webkit-appearance: none;
 }
 
-.submit{
-    background-color: #812626;
-    color: #EADEDA;
-    width: 320px;
-    height: 30px;
-    border: 2px black solid;
+.input-submit {
+    width: 130px;
+    height: 35px;
     border-radius: 10px;
-}
-
-.submit:hover{
-    background-color: #681f1f;
+    background-color: #812626;
+    color: white;
+    border: 0;
+    box-shadow: 0px 0px 10px rgb(110, 2, 2);
+    padding: 7px;
+    font-size: 18px;
     cursor: pointer;
+    transition: transform 0ms linear;
 }
 
-.submit:active{
-    translate: 0px 1px;
+.input-submit:hover {
+    transform: scale(1.10);
+    background-color: #d41919;
 }
+
+.input-submit:active {
+    transform: scale(0.93);
+}
+
+.ourcontacts-header {
+    font-size: 53px;
+}
+
 
 /* Animação */
 
